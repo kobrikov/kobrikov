@@ -1,0 +1,39 @@
+{
+  "name": "kobrikov",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Evgeniy Kobrikov personal website",
+  "homepage": "https://kobrikov.com",
+  "scripts": {
+    "test": "gulp build",
+    "start": "gulp build && gulp serve",
+    "build": "gulp build"
+  },
+  "author": {
+    "name": "Evgeniy Kobrikov",
+    "email": "mail@kobrikov.com"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0"
+  }
+}

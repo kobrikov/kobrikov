@@ -1,0 +1,82 @@
+.page-footer {
+  background-color: $bg-footer;
+
+  &__inner {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-item {
+    display: flex;
+    width: 29px;
+    min-height: 29px;
+    margin-right: 10px;
+    overflow: hidden;
+    list-style: none;
+    font-size: 0;
+    vertical-align: top;
+    text-indent: -1999em;
+    background: url("../img/social-sprite.png") no-repeat -59px -59px;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__social-item--vk {
+    background-position: -10px -10px;
+  }
+
+  &__social-item--fb {
+    background-position: -59px -10px;
+  }
+
+  &__social-item--gh {
+    background-position: -59px -59px;
+  }
+
+  &__social-item--email {
+    background-position: -10px -59px;
+  }
+
+  &__copyright {
+    color: $font-white;
+    opacity: 0.5;
+    font-size: 12px;
+    padding: 10px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  @media ($tablet-width) {
+    &__inner {
+      padding: 20px 40px;
+    }
+
+    &__social {
+      padding: 10px;
+    }
+  }
+
+  @media ($desktop-width) {
+    &__inner {
+      padding: 5px 60px;
+    }
+
+    &__social {
+      padding: 20px 10px 10px;
+    }
+  }
+}

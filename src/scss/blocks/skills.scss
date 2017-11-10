@@ -1,0 +1,46 @@
+.skills {
+  margin: 0;
+  padding: 0;
+
+  &__inner {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: $max-width;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    & span {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      white-space: nowrap;
+      background-color: $bg-header;
+      color: white;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $font-black;
+  }
+
+  @media ($tablet-width) {
+    &__inner {
+      padding: 20px 40px;
+    }
+  }
+
+  @media ($desktop-width) {
+    &__inner {
+      padding: 40px 60px;
+    }
+  }
+}
