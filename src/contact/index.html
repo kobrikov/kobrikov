@@ -6,10 +6,10 @@
     <meta name="author" content="Evgeniy Kobrikov">
     <meta name="keywords" content="Кобриков, Евгений Кобриков, Кобриков сайт, Kobrikov, Evgeniy Kobrikov, Kobrikov website, Kobrikov site">
     <meta name="description" content="Evgeniy Kobrikov is a web developer from Russia.">
-    <title>Evgeniy Kobrikov - CV</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <title>Contact | Evgeniy Kobrikov</title>
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
   </head>
   <body>
     <input id="menuToggle" type="checkbox" hidden>
@@ -23,20 +23,35 @@
             <li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="/projects/">Projects</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="/about/">About</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="/contact/">Contact</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="/contact/">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="title">
-        <div class="title__inner">
-          <div class="title__avatar">
-            <img src="img/avatar.png" alt="avatar">
+      <section class="contacts" id="contacts">
+        <div class="contacts__inner">
+          <h3>Contact form</h3>
+          <div class="contacts__form">
+            <form class="form" method="POST" enctype="multipart/form-data" action="http://kobrikov.com/contact/" autocomplete="off">
+              <div class="contacts__fieldset">
+                <div class="contacts__column">
+                  <label>Full Name</label>
+                  <input type="text" name="name" required="required">
+                  <label>Email Address</label>
+                  <input type="email" name="email" required="required">
+                  <label>Subject</label>
+                  <input type="text" name="subject" required="required">
+                </div>
+                <div class="contacts__column">
+                  <label>Your Message</label>
+                  <textarea name="message" required="required"></textarea>
+                  <p class="contacts__status"></p>
+                  <button type="submit">Send message</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <h1 class="title__hello">Hi, I'm Evgeniy</h1>
-          <p class="title__desc">I'm a web developer. If you find my profile interesting and suitable for your project or for your positions, please, don't hesitate and contact me.</p>
-          <a class="title__btn" href="/contact/">Hire me</a>
         </div>
       </section>
     </main>
@@ -53,5 +68,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/form.js"></script>
 	</body>
 </html>

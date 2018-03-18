@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: $bg-footer;
+  background-color: $color-seven;
 
   &__inner {
     margin: 0 auto;
@@ -50,7 +50,7 @@
   }
 
   &__copyright {
-    color: $font-white;
+    color: white;
     opacity: 0.5;
     font-size: 12px;
     padding: 10px;

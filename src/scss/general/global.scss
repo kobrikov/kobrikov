@@ -1,10 +1,26 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: $min-width;
+  min-height: 100vh;
+  font-family: $font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  background-color: $bgcolor;
-  min-width: 320px;
+  color: $font-color;
+  background-color: $color-one;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }

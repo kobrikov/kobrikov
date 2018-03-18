@@ -1,0 +1,43 @@
+.service {
+  margin: 0;
+  padding: 0;
+
+  &__inner {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: $max-width;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 88px;
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-one;
+  }
+
+  @media ($tablet-width) {
+    &__inner {
+      padding: 20px 40px;
+    }
+
+    &__title {
+      font-size: 120px;
+    }
+  }
+
+  @media ($desktop-width) {
+    &__inner {
+      padding: 40px 60px;
+    }
+  }
+}

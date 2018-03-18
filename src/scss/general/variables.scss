@@ -1,11 +1,20 @@
 //colors
-$bgcolor: rgba(242, 242, 242, 1);
-$bg-header: rgba(0, 51, 51, 1);
-$bg-footer: rgba(0, 31, 31, 1);
-$font-white: rgba(255, 255, 255, 1);
-$font-black: rgba(0, 0, 0, 1);
+$bg-color: rgba(0, 0, 0, 0.9);
+$font-color: rgba(255, 255, 255, 1);
 
+$color-one: rgba(0, 51, 51, 1);
+$color-two: rgba(0, 31, 31, 1);
+$color-three: #1d3b72;
+$color-four: #1b3058;
+$color-six: rgba(0, 51, 51, 1);
+$color-seven: rgba(0, 31, 31, 1);
+
+//sizes
+$min-width: 320px;
 $max-width: 1024px;
+
+//fonts
+$font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 //breakpoints
 $tablet-width: "min-width: 768px";

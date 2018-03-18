@@ -1,61 +1,31 @@
 .page-header {
-  background-color: $bg-header;
+  background-color: transparent;
 
   &__inner {
-    margin: 0 auto;
-    padding: 45px 20px;
-    max-width: $max-width;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__avatar {
-    font-size: 0;
-
-    & img {
-      min-height: 100px;
-      width: 100px;
-      border-radius: 100%;
-    }
-  }
-
-  &__title {
-    font-size: 30px;
-    font-weight: 700;
-    color: $font-white;
-    max-width: 100%;
-  }
-
-  &__desc {
-    font-size: 16px;
-    font-weight: 400;
-    color: $font-white;
-    max-width: 100%;
-  }
-
-  &__link {
-    color: $font-white;
+    flex-grow: 1;
+    margin: 0 auto;
+    padding: 10px 20px;
+    max-width: $max-width;
+    box-sizing: border-box;
   }
 
   @media ($tablet-width) {
+    background-color: $color-two;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.95;
+
     &__inner {
-      padding: 30px 40px;
-    }
-
-    &__title {
-      font-size: 45px;
-    }
-
-    &__desc {
-      font-size: 24px;
+      padding: 0 40px;
     }
   }
 
   @media ($desktop-width) {
     &__inner {
-      padding: 50px 60px;
+      padding: 0 60px;
     }
   }
 }

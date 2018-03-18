@@ -1,6 +1,9 @@
 .skills {
   margin: 0;
   padding: 0;
+  display: flex;
+  width: 100%;
+  background-color: $font-color;
 
   &__inner {
     margin: 0 auto;
@@ -21,15 +24,15 @@
       font-size: 14px;
       font-weight: 400;
       white-space: nowrap;
-      background-color: $bg-header;
-      color: white;
+      background-color: $color-one;
+      color: $font-color;
     }
   }
 
   &__title {
     font-size: 18px;
     font-weight: 700;
-    color: $font-black;
+    color: $color-one;
   }
 
   @media ($tablet-width) {
